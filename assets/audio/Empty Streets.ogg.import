@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dp6xjawcy3aol"
+path="res://.godot/imported/Empty Streets.ogg-05f3fd2987b6eb51225254ac8a96b9d2.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/audio/Empty Streets.ogg"
+dest_files=["res://.godot/imported/Empty Streets.ogg-05f3fd2987b6eb51225254ac8a96b9d2.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

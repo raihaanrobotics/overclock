@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://dksfcvvvoms7f"]
+
+[ext_resource type="Texture2D" uid="uid://g2yn0l06tdj" path="res://scenes/tutorial/arena.jpg" id="1_jaenq"]
+[ext_resource type="PackedScene" uid="uid://bdqeyr6x6l11b" path="res://scenes/player/player.tscn" id="2_g40di"]
+[ext_resource type="Script" uid="uid://bv33pyty1mxso" path="res://scenes/player/player.gd" id="3_r23bs"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pq3l0"]
+size = Vector3(30, 1, 30)
+
+[sub_resource type="Environment" id="Environment_jaenq"]
+background_mode = 3
+background_canvas_max_layer = -1
+tonemap_mode = 2
+tonemap_exposure = 0.85
+ssao_enabled = true
+glow_enabled = true
+glow_intensity = 0.6
+glow_hdr_threshold = 1.2
+
+[node name="Tutorial" type="Node3D" unique_id=246988801]
+
+[node name="sunlight" type="DirectionalLight3D" parent="." unique_id=1560279964]
+transform = Transform3D(0.8660254, 0.43301272, -0.24999999, 0, 0.49999997, 0.86602545, 0.5, -0.75, 0.43301266, 0, 0, 0)
+light_color = Color(1, 0.972549, 0.9411765, 1)
+light_energy = 0.7
+shadow_enabled = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1462842655]
+layer = -1
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=1154829401]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("1_jaenq")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="arenacamera" type="Camera3D" parent="." unique_id=703801711]
+transform = Transform3D(1, 0, 0, 0, 0.93969256, 0.3420201, 0, -0.3420201, 0.93969256, 0, 3.5, 4.5)
+projection = 1
+current = true
+size = 9.0
+
+[node name="platformcollision" type="StaticBody3D" parent="." unique_id=114331431]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="platformcollision" unique_id=1052291740]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+shape = SubResource("BoxShape3D_pq3l0")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1820391833]
+environment = SubResource("Environment_jaenq")
+
+[node name="Player" parent="." unique_id=28602783 instance=ExtResource("2_g40di")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 2.5, 0)
+script = ExtResource("3_r23bs")

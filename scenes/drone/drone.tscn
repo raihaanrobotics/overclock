@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://c5wmdh8ch227c"]
+
+[ext_resource type="PackedScene" uid="uid://c8eioofppyvr3" path="res://assets/models/drone.glb" id="1_uvgqj"]
+[ext_resource type="Script" uid="uid://cebm52efsg6tp" path="res://scenes/drone/drone.gd" id="2_ws74u"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_d5du7"]
+size = Vector3(0.5, 0.5, 0.5)
+
+[node name="Drone" type="CharacterBody3D" unique_id=3037580]
+script = ExtResource("2_ws74u")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=912857317]
+shape = SubResource("BoxShape3D_d5du7")
+
+[node name="ModelContainer" type="Node3D" parent="." unique_id=521071257]
+
+[node name="Sketchfab_Scene" parent="ModelContainer" unique_id=1130195451 instance=ExtResource("1_uvgqj")]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0, 0)
+
+[node name="4 L" parent="ModelContainer/Sketchfab_Scene/Sketchfab_model/cc9fea1cfb8e481899fb153dd500599c_fbx/Object_2/RootNode" parent_id_path=PackedInt32Array(1130195451, 833698588) index="0" unique_id=965144722]
+transform = Transform3D(100, 0, 0, 0, -4.371139e-06, 100, 0, -100, -4.371139e-06, 0, 798.5846, 0)
+
+[node name="4 L_008" parent="ModelContainer/Sketchfab_Scene/Sketchfab_model/cc9fea1cfb8e481899fb153dd500599c_fbx/Object_2/RootNode" parent_id_path=PackedInt32Array(1130195451, 833698588) index="1" unique_id=1833576694]
+transform = Transform3D(-24.642477, -96.91621, -4.236341e-06, 0, -4.3711398e-06, 100, -96.91615, 24.642492, 1.0771573e-06, 1017.4069, 787.01245, 1081.725)
+
+[node name="4 L_004" parent="ModelContainer/Sketchfab_Scene/Sketchfab_model/cc9fea1cfb8e481899fb153dd500599c_fbx/Object_2/RootNode/4 L_008" index="1" unique_id=927069374]
+transform = Transform3D(-0.12350917, -0.9923434, -1.3334861e-11, 0.9923434, -0.12350917, 4.4910675e-10, -4.4731513e-10, 4.223604e-11, 1, 8.693239, -5.5048504, 5.4181843)
+
+[node name="4 L_009" parent="ModelContainer/Sketchfab_Scene/Sketchfab_model/cc9fea1cfb8e481899fb153dd500599c_fbx/Object_2/RootNode" parent_id_path=PackedInt32Array(1130195451, 833698588) index="2" unique_id=1296547735]
+transform = Transform3D(-23.214725, 97.268, 4.2517217e-06, 0, -4.3711357e-06, 99.99999, 97.26816, 23.214685, 1.0147469e-06, -978.03906, 787.0173, 1081.7203)
+
+[node name="4 L_001" parent="ModelContainer/Sketchfab_Scene/Sketchfab_model/cc9fea1cfb8e481899fb153dd500599c_fbx/Object_2/RootNode/4 L_009" index="1" unique_id=494513546]
+transform = Transform3D(-0.103979945, 0.9945796, 4.0592857e-07, -0.9945795, -0.10397995, -7.8983766e-07, -7.43348e-07, -4.858556e-07, 1, -8.749548, -5.5044956, 5.4186153)
+
+[node name="4 L_010" parent="ModelContainer/Sketchfab_Scene/Sketchfab_model/cc9fea1cfb8e481899fb153dd500599c_fbx/Object_2/RootNode" parent_id_path=PackedInt32Array(1130195451, 833698588) index="3" unique_id=677623972]
+transform = Transform3D(-67.228745, -74.029, -3.2359112e-06, 0, -4.3711375e-06, 99.99999, -74.02903, 67.22872, 2.9386613e-06, -978.04333, 787.0196, -1277.6445)
+
+[node name="4 L_002" parent="ModelContainer/Sketchfab_Scene/Sketchfab_model/cc9fea1cfb8e481899fb153dd500599c_fbx/Object_2/RootNode/4 L_010" index="1" unique_id=248887913]
+transform = Transform3D(-0.1779948, -0.9840317, -3.290023e-09, 0.98403156, -0.17799483, 3.1511473e-08, -3.159389e-08, 2.3713924e-09, 1.0000001, -8.7496605, 5.5062084, 5.418825)
+
+[node name="4 L_011" parent="ModelContainer/Sketchfab_Scene/Sketchfab_model/cc9fea1cfb8e481899fb153dd500599c_fbx/Object_2/RootNode" parent_id_path=PackedInt32Array(1130195451, 833698588) index="4" unique_id=435785739]
+transform = Transform3D(-67.23582, 74.0226, 3.2356304e-06, 0, -4.371139e-06, 100, 74.02259, 67.235825, 2.938971e-06, 1017.42285, 787.01984, -1277.6414)
+
+[node name="4 L_003" parent="ModelContainer/Sketchfab_Scene/Sketchfab_model/cc9fea1cfb8e481899fb153dd500599c_fbx/Object_2/RootNode/4 L_011" index="1" unique_id=612991025]
+transform = Transform3D(-0.25213224, 0.96769273, -6.419373e-07, -0.9676926, -0.25213227, 3.1990885e-07, 1.4772034e-07, 7.0185735e-07, 1, 8.693494, 5.5038204, 5.41805)
+
+[node name="AnimationPlayer" parent="ModelContainer/Sketchfab_Scene" index="1" unique_id=403827365]
+autoplay = &"Scene"
+
+[editable path="ModelContainer/Sketchfab_Scene"]

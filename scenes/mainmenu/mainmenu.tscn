@@ -1,0 +1,460 @@
+[gd_scene format=3 uid="uid://btocrr7aryc6l"]
+
+[ext_resource type="Script" uid="uid://dxunikygrqp1t" path="res://scenes/mainmenu/mainmenu.gd" id="1_h1jkj"]
+[ext_resource type="Texture2D" uid="uid://t2gx6jfbx1hu" path="res://scenes/mainmenu/home.jpg" id="2_q5j66"]
+[ext_resource type="Texture2D" uid="uid://dbegxrdrjv110" path="res://scenes/mainmenu/playbtn.png" id="3_jqc74"]
+[ext_resource type="Script" uid="uid://bx2n3jx8jh3yv" path="res://scenes/mainmenu/play_button.gd" id="4_7vn64"]
+[ext_resource type="Texture2D" uid="uid://bw0oymjgrhg3v" path="res://scenes/mainmenu/tournamentsbtn.png" id="5_1pbl5"]
+[ext_resource type="Script" uid="uid://bni6drkjmsufl" path="res://scenes/mainmenu/tournaments_btn.gd" id="6_pml63"]
+[ext_resource type="Texture2D" uid="uid://y0u5lv8ikbw7" path="res://scenes/mainmenu/leaderboardbtn.png" id="7_i5sex"]
+[ext_resource type="Script" uid="uid://bj6bspx72t2ew" path="res://scenes/mainmenu/leaderboard_btn.gd" id="8_80y6t"]
+[ext_resource type="Texture2D" uid="uid://d2twc0v4jc857" path="res://scenes/mainmenu/settingsbtn.png" id="9_lino5"]
+[ext_resource type="Script" uid="uid://c4boqjtwxdyxt" path="res://scenes/mainmenu/settings_btn.gd" id="10_vidnq"]
+[ext_resource type="Script" uid="uid://dl6n81cfwacuf" path="res://scenes/mainmenu/popupoverlaysettings.gd" id="11_ehurr"]
+[ext_resource type="FontFile" uid="uid://c1l4lrildy2vg" path="res://assets/fonts/Oxanium-Regular.ttf" id="12_5uunp"]
+[ext_resource type="FontFile" uid="uid://bgfqp41okg5mo" path="res://assets/fonts/Oxanium-SemiBold.ttf" id="13_ok4da"]
+[ext_resource type="FontFile" uid="uid://b61i8tvetyn06" path="res://assets/fonts/Oxanium-ExtraLight.ttf" id="14_x15w2"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_at6rn"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.039215688, 0.05490196, 0.09019608, 0.39215687)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+corner_radius_top_left = 1024
+corner_radius_top_right = 1024
+corner_radius_bottom_right = 1024
+corner_radius_bottom_left = 1024
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7uvds"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dihg0"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.039215688, 0.05490196, 0.09019608, 0.43137255)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0.8980392, 1, 1)
+corner_radius_top_left = 1024
+corner_radius_top_right = 1024
+corner_radius_bottom_right = 1024
+corner_radius_bottom_left = 1024
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_at6rn"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rqglp"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.101960786, 0.101960786, 0.101960786, 0.43137255)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0.8980392, 1, 1)
+corner_radius_top_left = 1024
+corner_radius_top_right = 1024
+corner_radius_bottom_right = 1024
+corner_radius_bottom_left = 1024
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dihg0"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0y70q"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.101960786, 0.101960786, 0.101960786, 0.43137255)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0.8980392, 1, 1)
+corner_radius_top_left = 1024
+corner_radius_top_right = 1024
+corner_radius_bottom_right = 1024
+corner_radius_bottom_left = 1024
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qrn07"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qrn07"]
+content_margin_left = 40.0
+content_margin_top = 30.0
+content_margin_right = 40.0
+content_margin_bottom = 30.0
+bg_color = Color(0.039215688, 0.05490196, 0.09019608, 0.8627451)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0.8980392, 1, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_raimv"]
+bg_color = Color(1, 1, 1, 0)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.8, 0.8, 0.8, 0)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+expand_margin_top = 4.0
+expand_margin_bottom = 4.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qy7ti"]
+bg_color = Color(0, 0.8980392, 1, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_y5i8j"]
+bg_color = Color(0.2, 0.9372549, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f0ka0"]
+bg_color = Color(1, 1, 1, 0)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0.8980392, 1, 0)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+expand_margin_top = 4.0
+expand_margin_bottom = 4.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lqdfc"]
+bg_color = Color(0, 0.8980392, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mn2x1"]
+bg_color = Color(0.2, 0.9372549, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hr4ih"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0.8980392, 1, 0)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+expand_margin_top = 4.0
+expand_margin_bottom = 4.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xcgji"]
+bg_color = Color(0, 0.8980392, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f1hcs"]
+bg_color = Color(0.2, 0.9372549, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cpamr"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[node name="Control" type="Control" unique_id=100353580]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_h1jkj")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=287590753]
+custom_minimum_size = Vector2(1920, 1080)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_q5j66")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="PlayButton" type="Button" parent="." unique_id=418228343]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = -100.0
+offset_right = 100.0
+offset_bottom = 100.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/icon_max_width = 500
+theme_override_styles/normal = SubResource("StyleBoxFlat_at6rn")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_at6rn")
+theme_override_styles/hover = SubResource("StyleBoxFlat_at6rn")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_7uvds")
+icon = ExtResource("3_jqc74")
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("4_7vn64")
+story_scene_path = "uid://cgiitm8mrgal6"
+
+[node name="BottomMargin" type="MarginContainer" parent="." unique_id=1713444872]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/margin_bottom = 50
+metadata/_edit_use_anchors_ = true
+
+[node name="BottomBar" type="HBoxContainer" parent="BottomMargin" unique_id=1021918055]
+custom_minimum_size = Vector2(0, 190)
+layout_mode = 2
+theme_override_constants/separation = 200
+alignment = 1
+
+[node name="TournamentsBtn" type="Button" parent="BottomMargin/BottomBar" unique_id=356592744]
+custom_minimum_size = Vector2(130, 130)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+theme_override_constants/icon_max_width = 500
+theme_override_styles/normal = SubResource("StyleBoxFlat_dihg0")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_dihg0")
+theme_override_styles/hover = SubResource("StyleBoxFlat_dihg0")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_at6rn")
+icon = ExtResource("5_1pbl5")
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("6_pml63")
+
+[node name="LeaderboardBtn" type="Button" parent="BottomMargin/BottomBar" unique_id=235992479]
+custom_minimum_size = Vector2(130, 130)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+theme_override_constants/icon_max_width = 600
+theme_override_styles/normal = SubResource("StyleBoxFlat_rqglp")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_rqglp")
+theme_override_styles/hover = SubResource("StyleBoxFlat_rqglp")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_dihg0")
+icon = ExtResource("7_i5sex")
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("8_80y6t")
+
+[node name="SettingsBtn" type="Button" parent="BottomMargin/BottomBar" unique_id=1721760269]
+custom_minimum_size = Vector2(130, 130)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+theme_override_constants/icon_max_width = 600
+theme_override_styles/normal = SubResource("StyleBoxFlat_0y70q")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_0y70q")
+theme_override_styles/hover = SubResource("StyleBoxFlat_0y70q")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_qrn07")
+icon = ExtResource("9_lino5")
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("10_vidnq")
+
+[node name="SettingsPanel" type="PanelContainer" parent="." unique_id=1452532469]
+visible = false
+custom_minimum_size = Vector2(1000, 700)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_qrn07")
+script = ExtResource("11_ehurr")
+
+[node name="Content" type="VBoxContainer" parent="SettingsPanel" unique_id=1865817740]
+custom_minimum_size = Vector2(800, 600)
+layout_mode = 2
+theme_override_constants/separation = 24
+
+[node name="TitleLabel" type="Label" parent="SettingsPanel/Content" unique_id=1223457204]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("12_5uunp")
+theme_override_font_sizes/font_size = 40
+text = "SETTINGS"
+horizontal_alignment = 1
+
+[node name="HSeparator" type="HSeparator" parent="SettingsPanel/Content" unique_id=1766529497]
+layout_mode = 2
+
+[node name="SettingsBody" type="VBoxContainer" parent="SettingsPanel/Content" unique_id=1139165997]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 20
+
+[node name="AudioHeader" type="Label" parent="SettingsPanel/Content/SettingsBody" unique_id=675997000]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0.8980392, 1, 1)
+theme_override_fonts/font = ExtResource("13_ok4da")
+theme_override_font_sizes/font_size = 26
+text = "AUDIO"
+
+[node name="MasterRow" type="HBoxContainer" parent="SettingsPanel/Content/SettingsBody" unique_id=251888247]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="SettingsPanel/Content/SettingsBody/MasterRow" unique_id=338448572]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("12_5uunp")
+theme_override_font_sizes/font_size = 22
+text = "Master Volume"
+
+[node name="MasterSlider" type="HSlider" parent="SettingsPanel/Content/SettingsBody/MasterRow" unique_id=1941938239]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(600, 32)
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_styles/slider = SubResource("StyleBoxFlat_raimv")
+theme_override_styles/grabber_area = SubResource("StyleBoxFlat_qy7ti")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxFlat_y5i8j")
+max_value = 1.0
+step = 0.05
+value = 0.8
+
+[node name="MusicRow" type="HBoxContainer" parent="SettingsPanel/Content/SettingsBody" unique_id=508348970]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="SettingsPanel/Content/SettingsBody/MusicRow" unique_id=1356582405]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("12_5uunp")
+theme_override_font_sizes/font_size = 22
+text = "Music"
+
+[node name="MusicSlider" type="HSlider" parent="SettingsPanel/Content/SettingsBody/MusicRow" unique_id=878908717]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(600, 32)
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_styles/slider = SubResource("StyleBoxFlat_f0ka0")
+theme_override_styles/grabber_area = SubResource("StyleBoxFlat_lqdfc")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxFlat_mn2x1")
+max_value = 1.0
+step = 0.05
+value = 0.8
+
+[node name="SFXRow" type="HBoxContainer" parent="SettingsPanel/Content/SettingsBody" unique_id=1569844025]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="SettingsPanel/Content/SettingsBody/SFXRow" unique_id=1123585657]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("12_5uunp")
+theme_override_font_sizes/font_size = 22
+text = "SFX"
+
+[node name="SFXSlider" type="HSlider" parent="SettingsPanel/Content/SettingsBody/SFXRow" unique_id=522058877]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(600, 32)
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_styles/slider = SubResource("StyleBoxFlat_hr4ih")
+theme_override_styles/grabber_area = SubResource("StyleBoxFlat_xcgji")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxFlat_f1hcs")
+max_value = 1.0
+step = 0.05
+value = 0.8
+
+[node name="GraphicsHeader" type="Label" parent="SettingsPanel/Content/SettingsBody" unique_id=396110304]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0.8980392, 1, 1)
+theme_override_fonts/font = ExtResource("13_ok4da")
+theme_override_font_sizes/font_size = 26
+text = "GRAPHICS"
+
+[node name="FullscreenToggle" type="CheckButton" parent="SettingsPanel/Content/SettingsBody" unique_id=299543405]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 36)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("12_5uunp")
+theme_override_font_sizes/font_size = 22
+theme_override_colors/button_checked_color = Color(0, 0.8980392, 1, 1)
+theme_override_colors/button_unchecked_color = Color(1, 1, 1, 1)
+text = "Fullscreen Mode"
+
+[node name="VSyncToggle" type="CheckButton" parent="SettingsPanel/Content/SettingsBody" unique_id=1925966989]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 36)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("12_5uunp")
+theme_override_font_sizes/font_size = 22
+theme_override_colors/button_checked_color = Color(0, 0.8980392, 1, 1)
+theme_override_colors/button_unchecked_color = Color(1, 1, 1, 1)
+text = "VSync Enabled"
+
+[node name="ControlsHeader" type="Label" parent="SettingsPanel/Content/SettingsBody" unique_id=1363252822]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0.8980392, 1, 1)
+theme_override_fonts/font = ExtResource("13_ok4da")
+theme_override_font_sizes/font_size = 26
+text = "CONTROLS"
+
+[node name="MoveForwardRow" type="HBoxContainer" parent="SettingsPanel/Content/SettingsBody" unique_id=764433158]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="SettingsPanel/Content/SettingsBody/MoveForwardRow" unique_id=921227560]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("12_5uunp")
+theme_override_font_sizes/font_size = 22
+text = "Move Forward"
+
+[node name="KeyBtn" type="Button" parent="SettingsPanel/Content/SettingsBody/MoveForwardRow" unique_id=478606105]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(160, 40)
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0.8980392, 1, 1)
+text = "W"
+
+[node name="Spacer" type="Control" parent="SettingsPanel/Content" unique_id=1692492319]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="CloseBtn" type="Button" parent="SettingsPanel/Content" unique_id=440203142]
+custom_minimum_size = Vector2(140, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("14_x15w2")
+theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = SubResource("StyleBoxFlat_cpamr")
+text = "Close"
+
+[connection signal="pressed" from="BottomMargin/BottomBar/TournamentsBtn" to="." method="_on_tournaments_btn_pressed"]
+[connection signal="pressed" from="BottomMargin/BottomBar/LeaderboardBtn" to="." method="_on_leaderboard_btn_pressed"]
+[connection signal="pressed" from="BottomMargin/BottomBar/SettingsBtn" to="." method="_on_settings_btn_pressed"]
+[connection signal="pressed" from="SettingsPanel/Content/CloseBtn" to="." method="_on_close_btn_pressed"]
+[connection signal="pressed" from="SettingsPanel/Content/CloseBtn" to="SettingsPanel" method="close_overlay"]

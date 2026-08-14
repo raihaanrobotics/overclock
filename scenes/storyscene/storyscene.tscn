@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://cgiitm8mrgal6"]
+
+[ext_resource type="Script" uid="uid://cdeoid8ngn18g" path="res://scenes/storyscene/storyscene.gd" id="1_sap2t"]
+[ext_resource type="VideoStream" uid="uid://bwxguw4kjqk1t" path="res://assets/video/overclock_intro.ogv" id="2_6t84c"]
+
+[node name="storyscene" type="Control" unique_id=1011357385]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_sap2t")
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=445774358]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stream = ExtResource("2_6t84c")
+expand = true
